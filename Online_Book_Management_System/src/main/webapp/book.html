@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Book</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f8f9fa; /* Light background for the page */
+      padding-top: 50px; /* Add some space for the form */
+    }
+
+    .container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      font-size: 18px;
+      font-weight: bold;
+      color: #555;
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin-top: 5px;
+    }
+
+    .form-control:focus {
+      border-color: #007bff; /* Focus border color */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Focus shadow */
+    }
+
+    .btn-submit {
+      background-color: #28a745;
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+      width: 100%;
+      border: none;
+      margin-top: 20px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-submit:hover {
+      background-color: #218838;
+    }
+
+    .btn-cancel {
+      background-color: #dc3545;
+      color: white;
+      padding: 12px 25px;
+      font-size: 18px;
+      border-radius: 5px;
+      width: 100%;
+      border: none;
+      margin-top: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-cancel:hover {
+      background-color: #c82333;
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Add New Book</h1>
+
+    <form action="add" method="post">
+      <div class="form-group">
+        <label for="bcode" class="form-label">Book Code</label>
+        <input type="text" name="bcode" id="bcode" class="form-control" required>
+      </div>
+      
+      <div class="form-group">
+        <label for="bname" class="form-label">Book Name</label>
+        <input type="text" name="bname" id="bname" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bauthor" class="form-label">Book Author</label>
+        <input type="text" name="bauthor" id="bauthor" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bprice" class="form-label">Book Price</label>
+        <input type="text" name="bprice" id="bprice" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="bqty" class="form-label">Book Quantity</label>
+        <input type="text" name="bqty" id="bqty" class="form-control" required>
+      </div>
+
+      <button type="submit" class="btn-submit">Add Book</button>
+      <button type="reset" class="btn-cancel">Cancel</button>
+    </form>
+  </div>
+
+  <!-- Bootstrap JS and dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>
